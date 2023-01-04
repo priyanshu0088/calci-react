@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+*{
+  background-image: url(/src/images/darkback.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.input-no{
+  width: 272px;
+ height: 40px;
+ margin: 0px 0px 10px 0px;
+ border-radius: 30px;
+ text-align: right;
+ 
+ font-size: 25px;
+ font-weight: 400;
+ color: white;
+ border: 2px solid gray;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.calc-btn{
+  display: grid;
+  grid-template-columns:repeat(4,60px);
 }
+
+.butn{
+  
+ height: 55px;
+ width: 55px;
+ border-radius: 50%;
+ font-size: 26px;
+ font-weight: 500;
+ font-family:Arial, Helvetica, sans-serif;
+ color: white;
+ border: 2px solid gray;
+}
+
+#clr{
+  grid-column: 4/4;
+  grid-row: 5;
+  width: 70px;
+  
+}
+#result{
+  
+border-radius: 30px;
+  grid-column: 1/4;
+  grid-row: 5;
+  width: 175px;
+  /* background:rgba(255, 255, 255, 0.397) ; */
+  border: 2px solid gray;
+  /* color: black; */
+}
+#result:hover{
+  color: rgb(192, 176, 176);
+}
+.special{
+  width: 95px;
+  border-radius: 30px;
+  margin: 1px;
+  font-size: 26px;
+ font-weight: 500;
+ font-family:Arial, Helvetica, sans-serif;
+ /* color:black; */
+ color: white;
+ border: 2px solid gray;
+ /* background: rgba(255, 255, 255, 0.397); */
+ 
+}
+ .center{
+  border: 2px solid gray;
+  border-radius: 10px;
+   padding: 5px;
+} 
+.butn:hover{
+cursor: pointer;
+/* color: gray; */
+background: rgba(128, 128, 128, 0.432);
+
+}
+.special:hover{
+  cursor: pointer;
+  background:rgba(128, 128, 128, 0.432) ;
+}
+
